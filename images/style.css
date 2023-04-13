@@ -1,0 +1,46 @@
+        /* Reset styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Centered content */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        .content {
+            text-align: center;
+        }
+
+        .content img {
+            width: 300px;
+            height: auto;
+        }
+
+        .content p {
+            margin-top: 1rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        /* Icon styles */
+        .icon-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        .icon-container a {
+            margin: 0 0.5rem;
+        }
+
+        .icon-container img {
+            width: 48px;
+            height: 48px;
+        }
