@@ -1,51 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>tailwag!</title>
-	<style>
-		body {
-			background-color: white;
-		}
-		
-        #tailwag {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%)
-    width: 600px;
-    height: 338px;
-    animation-name: spin;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-}
-
-		
-        .spin {
-            animation-name: spin;
-            animation-duration: 2s;
-            animation-iteration-count: infinite;
+    <meta content="CLICK HERE FOR COOL DANCING" property="og:title" />
+    <meta content="it's really cool" property="og:description" />
+    <meta content="https://ralsei.gay/" property="og:url" />
+    <meta content="#74ED94" data-react-helmet="true" name="theme-color" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>tailwag!</title>
+    <style>
+        body {
+            background-color: white;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
-		
-		@keyframes spin {
-			from {
-				transform: rotate(0deg);
-			}
-			to {
-				transform: rotate(360deg);
-			}
-		}
-	</style>
+
+        #tailwag {
+            width: 600px;
+            height: 338px;
+        }
+
+        /* Spin animation */
+        .spin {
+            animation: spin 1s infinite;
+        }
+
+        @keyframes spin {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
 </head>
 <body>
-	<audio autoplay loop>
-  		<source src="audio/thriller.mp3" type="audio/mpeg">
-	</audio>
-	<img id="tailwag" src="images/tailwag.gif">
-	
-	<script>
-		setTimeout(function() {
-			document.getElementById("tailwag").classList.add("spin");
-		}, 60000);
-	</script>
+    <audio autoplay loop>
+        <source src="audio/kitty" type="audio/mpeg">
+    </audio>
+    <img id="tailwag" src="images/tailwag.gif" class="spin"> <!-- Added the spin class here -->
+
+    <!-- Removed the script tag as it's not needed anymore -->
 </body>
 </html>
