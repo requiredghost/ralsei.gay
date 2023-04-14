@@ -125,3 +125,14 @@ color: purple;
   height: 40px;
   cursor: pointer;
 }
+
+.copyright-footer {
+  text-align: center;
+  font-size: 14px;
+  color: white;
+  padding: 10px 0;
+  background-color: rgb(15, 15, 15);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
