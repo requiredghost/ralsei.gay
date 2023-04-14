@@ -7,26 +7,40 @@
     <meta content="https://ralsei.gay/images/cool.jpg" property="og:image" />
     <meta content="#74ED94" data-react-helmet="true" name="theme-color" />
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>ralsei</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <title>ralsei</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
 </head>
 <body>
-    <div class="content">
-        <img src="images/spin.gif" alt="weee!">
-        <p>work in progress</p>
-        <div class="icon-container">
-            <a href="https://www.furaffinity.net/user/viirobin" target="_blank">
-                <img src="images/furaffinity-icon.png" alt="FurAffinity">
-            </a>
-            <a href="https://steamcommunity.com/id/retiredat20/" target="_blank">
-                <img src="images/steam-icon.png" alt="Steam">
-            </a>
-            <a href="https://letterboxd.com/raIsei/" target="_blank">
-                <img src="images/letterboxd-icon.png" alt="Letterboxd">
-            </a>
+  <div id="loading-screen">
+    <img src="images/spin.gif" alt="wee!">
+  </div>
+
+  <div id="content" style="display: none;">
+    <div class="navbar">
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">archive</a></li>
+        </ul>
+        <div class="social-icons">
+          <a href="https://www.furaffinity.net/user/viirobin" target="_blank"><img src="images/furaffinity-icon.png" alt="FurAffinity"></a>
+          <a href="https://steamcommunity.com/id/retiredat20/" target="_blank"><img src="images/steam-icon.png" alt="Steam"></a>
+          <a href="https://letterboxd.com/raIsei/" target="_blank"><img src="images/letterboxd-icon.png" alt="Letterboxd"></a>
         </div>
-    </div>
+      </div>
+
+      <div class="terminal">
+        <div class="terminal-line">
+          <span id="terminal-text"></span><span id="terminal-cursor">|</span>
+        </div>
+        <div id="input-container" class="terminal-line">
+          <div id="input-prefix">&gt;</div>
+          <input type="text" id="terminal-input" autocomplete="off">
+        </div>
+      </div>
+      
 </body>
 </html>
