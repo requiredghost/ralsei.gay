@@ -113,3 +113,15 @@ color: purple;
     font-weight: bold;
     margin-right: 10px;
   }
+
+  .navbar-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.navbar-logo img {
+  width: auto; /* Adjust the width as needed */
+  height: 40px;
+  cursor: pointer;
+}
