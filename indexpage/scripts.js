@@ -45,10 +45,10 @@ document.addEventListener("DOMContentLoaded", () => {
           case "2":
             window.location.href = "page2.html";
             break;
-          case "3":
-            window.location.href = "page3.html";
-            break;
             */
+          case "tailwag":
+            window.location.href = "tailwag.html";
+            break;
         case "help":
             terminalText.innerHTML += "<br>&gt; " + terminalInput.value;
             terminalText.innerHTML += "<br>uhh";
