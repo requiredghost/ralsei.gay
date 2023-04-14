@@ -29,6 +29,17 @@ document.addEventListener("DOMContentLoaded", () => {
       terminalInput.style.display = "inline";
       terminalInput.focus();
     }
+
+    function showError() {
+      terminalText.innerHTML += "<br>&gt; " + terminalInput.value;
+      terminalText.innerHTML += "<br>Invalid command. Please try again.";
+      terminalInput.value = "";
+      terminalInput.blur();
+      document.getElementById("input-prefix").style.display = "none";
+      setTimeout(() => {
+        showInputCursor();
+      }, 1000);
+    }
   
     setTimeout(fadeOutLoadingScreen, 2000);
     typeText();
@@ -53,19 +64,30 @@ document.addEventListener("DOMContentLoaded", () => {
             terminalText.innerHTML += "<br>&gt; " + terminalInput.value;
             terminalText.innerHTML += "<br>uhh";
             break;
-          default:
-            terminalText.innerHTML += "<br>&gt; " + terminalInput.value;
-            terminalText.innerHTML += "<br>Invalid command. Please try again.";
-            terminalInput.value = "";
-            terminalInput.blur();
-            document.getElementById("input-prefix").style.display = "none";
-            setTimeout(() => {
-              showInputCursor();
-            }, 1000);
-            break;
+            default:
+              if (command.startsWith("images/")) {
+                const imageName = command.slice(7); // Get the image name after 'images/'
+                if (imageName.length > 0) {
+                  window.location.href = command;
+                } else {
+                  showError();
+                }
+              } else if (command.startsWith("audio/")) {
+                const audioName = command.slice(6); // Get the audio name after 'audio/'
+                if (audioName.length > 0) {
+                  window.location.href = command;
+                } else {
+                  showError();
+                }
+              } else {
+                showError();
+              }
+              break;
+          }
         }
-      }
+      });
+      
     });
-  });
+      
   
   
