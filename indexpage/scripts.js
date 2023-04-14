@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const terminalCursor = document.getElementById("terminal-cursor");
     const terminalInput = document.getElementById("terminal-input");
   
-    const textToType = "This is a work in progress right now. There's no functionality yet for anything right now. Stay tuned!";
+    const textToType = "This is a work in progress right now. There's no functionality yet for anything at this moment. Stay tuned!";
     let index = 0;
   
     function fadeOutLoadingScreen() {
