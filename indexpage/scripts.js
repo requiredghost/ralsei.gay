@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
             break;
         case "help":
             terminalText.innerHTML += "<br>&gt; " + terminalInput.value;
-            terminalText.innerHTML += "<br>uhh";
+            terminalText.innerHTML += "<br>Nothing here yet, sorry! Go bug the developer to finish this...";
             break;
             default:
               if (command.startsWith("images/")) {
