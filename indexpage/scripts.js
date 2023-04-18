@@ -52,13 +52,19 @@ document.addEventListener("DOMContentLoaded", () => {
           case "tailwag":
             window.location.href = "tailwag.html";
             break;
+            case "projects":
+              window.location.href = "projects.html";
+              break;
+              case "projects":
+                window.location.href = "about.html";
+                break;
           case "help":
             terminalText.innerHTML += "<br>&gt; " + terminalInput.value;
-            terminalText.innerHTML += "<br>help: Gives you an list of commands you can use for the terminal.<br>changelog: See the current changes of the website.<br>tailwag: Takes you to tailwag. (Sound warning!)<br>echo: Repeats your input.<br>images/: Takes you to whatever images is hosted on this site.<br>audio/: Takes you to whatever audio is hosted on this site.";
+            terminalText.innerHTML += "<br>help: Gives you an list of commands you can use for the terminal.<br>changelog: See the current changes of the website.<br>about: Redirects you to the about page.<br>projects: Redirects you to the projects page.<br>tailwag: Takes you to tailwag. (Sound warning!)<br>echo: Repeats your input.<br>images/: Takes you to whatever images is hosted on this site.<br>audio/: Takes you to whatever audio is hosted on this site.";
             break;
             case "changelog":
               terminalText.innerHTML += "<br>&gt; " + terminalInput.value;
-              terminalText.innerHTML += "<br>Changelog v2.1.1<br>- Added GitHub repository link to the navbar.<br>-Added `echo` & `changelog` command.<br>- Added welcome splash message.<br>- Added functionality to `help` command.<br>To add:<br>- About and Projects pages.";
+              terminalText.innerHTML += "<br>Changelog v2.2<br>- Added Projects page<br>- Added About page";
               break;
           default: 
             if (command.startsWith("images/")) {

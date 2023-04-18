@@ -10,6 +10,11 @@ This is the repository for my personal website. This is hosted on [ralsei.gay](h
 
 ## Changelog
 
+### 2.2
+
+- Added Projects page
+- Added About page
+
 ### 2.1.1
 
 - Added GitHub repository link to the navbar.

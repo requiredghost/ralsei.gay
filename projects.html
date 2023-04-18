@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta content="Ralsei" property="og:title" />
+  <meta content="I do stuff." property="og:description" />
+  <meta content="https://ralsei.gay/" property="og:url" />
+  <meta content="https://ralsei.gay/images/cool.png" property="og:image" />
+  <meta content="#74ED94" data-react-helmet="true" name="theme-color" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <title>ralsei - Projects</title>
+  <link rel="stylesheet" href="projectspage/styles.css">
+  <script src="projectspage/scripts.js" defer></script>
+</head>
+<body>
+  <div id="loading-screen">
+    <img src="images/spin.gif" alt="wee!">
+  </div>
+
+  <div id="image-modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="enlarged-image">
+  </div>
+
+  <div id="content" style="display: none;">
+    <div class="navbar">
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="projects.html">projects</a></li>
+        </ul>
+        <div class="navbar-logo">
+          <a href="index.html"><img src="images/cool.png" alt="ralsei"></a>
+        </div>
+        <div class="social-icons">
+          <a href="https://github.com/ralzei/ralzei.github.io" target="_blank"><img src="images/icons/github-icon.png" alt="GitHub"></a>
+          <a href="https://steamcommunity.com/id/retiredat20/" target="_blank"><img src="images/icons/steam-icon.png" alt="Steam"></a>
+          <a href="https://www.furaffinity.net/user/viirobin" target="_blank"><img src="images/icons/furaffinity-icon.png" alt="FurAffinity"></a>
+          <a href="https://letterboxd.com/raIsei/" target="_blank"><img src="images/icons/letterboxd-icon.png" alt="Letterboxd"></a>
+        </div>
+      </div>
+
+    <div class="projects">
+      <div class="project" data-image="images/projects/mafiaofcheese.png" data-description="Mafia of Cheese is a Player vs Player vs Enemy style card collecting rouge-like, minimum of two players, maximum of four.
+      Taking inspiration from the facetious humor of Unstable Unicorns and Here to Slay card games.
+      All players will attempt to navigate a dangerous kitchen to overthrow the mafia gang in control. At the top of the food chain, is a lactose intolerant cat boss. At this point, chaos is unleashed. The players must compete against their enemies and each other to be the new mafia leader, or as they say. The BIG cheese.<br><br>The download link below is a Tabletop Simulator save."  data-download="downloadablefiles/mafiaofcheese.zip">
+        <h3>Mafia of Cheese</h3>
+      </div>
+      <!--
+      <div class="project" data-image="images/project2.png" data-description="Project 2 description." data-download="https://example.com/mafia-of-cheese-download">
+        <h3>Project 2</h3>
+      </div>
+      <div class="project" data-image="images/project3.png" data-description="Project 3 description." data-download="https://example.com/mafia-of-cheese-download">
+        <h3>Project 3</h3>
+      </div>
+      Add more projects as needed -->
+    </div>
+
+    <div class="project-details">
+      <img src="" alt="Project preview" id="project-image">
+      <p id="project-description"></p>
+    </div>
+
+    <footer class="copyright-footer">
+      &copy; 2023 viirose/viirobin. All rights reserved.
+    </footer>
+  </div>
+</body>
+</html>
