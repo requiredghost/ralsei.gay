@@ -4,10 +4,6 @@
 
 This is the repository for my personal website. This is hosted on [ralsei.gay](https://ralsei.gay) and uses the[Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0). I am open to pull requests and any issues that this site might have so if you ever wanna contribute or point out any issues right now, please do so!
 
-## To add:
-
-- About and Projects pages.
-
 ## Changelog
 
 ### 2.2
