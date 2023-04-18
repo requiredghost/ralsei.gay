@@ -14,7 +14,7 @@ This is the repository for my personal website. This is hosted on [ralsei.gay](h
 
 Changelog v2.1.1
 - Added GitHub repository link to the navbar.
-- Added `echo` command.
+- Added the `echo` & `changelog` command.
 - Added welcome splash message.
 - Added functionality to `help` command.
 
