@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
             case "projects":
               window.location.href = "projects.html";
               break;
-              case "projects":
+              case "about":
                 window.location.href = "about.html";
                 break;
           case "help":
