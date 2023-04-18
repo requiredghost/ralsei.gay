@@ -136,3 +136,12 @@ color: purple;
   bottom: 0;
   width: 100%;
 }
+
+.social-icons a:last-child {
+  margin-right: 0;
+}
+
+.social-icons img:last-child {
+  width: 24px;
+  height: 24px;
+}

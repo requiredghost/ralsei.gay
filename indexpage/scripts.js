@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const terminalCursor = document.getElementById("terminal-cursor");
     const terminalInput = document.getElementById("terminal-input");
   
-    const textToType = "This is a work in progress right now. There's no functionality yet for anything at this moment. Stay tuned!";
+    const textToType = "Welcome to Ralsei's homepage! This is the terminal page, write 'help' for commands if you are lost or write `changelog` to see the current changes.";
     let index = 0;
   
     function fadeOutLoadingScreen() {
@@ -46,47 +46,53 @@ document.addEventListener("DOMContentLoaded", () => {
   
     terminalInput.addEventListener("keyup", (event) => {
       if (event.key === "Enter") {
-        const command = terminalInput.value;
+       const command = terminalInput.value;
   
         switch (command) {
-            /*
-          case "1":
-            window.location.href = "page1.html";
-            break;
-          case "2":
-            window.location.href = "page2.html";
-            break;
-            */
           case "tailwag":
             window.location.href = "tailwag.html";
             break;
-        case "help":
+          case "help":
             terminalText.innerHTML += "<br>&gt; " + terminalInput.value;
-            terminalText.innerHTML += "<br>Nothing here yet, sorry! Go bug the developer to finish this...";
+            terminalText.innerHTML += "<br>help: Gives you an list of commands you can use for the terminal.<br>changelog: See the current changes of the website.<br>tailwag: Takes you to tailwag. (Sound warning!)<br>echo: Repeats your input.<br>images/: Takes you to whatever images is hosted on this site.<br>audio/: Takes you to whatever audio is hosted on this site.";
             break;
-            default:
-              if (command.startsWith("images/")) {
-                const imageName = command.slice(7); // Get the image name after 'images/'
-                if (imageName.length > 0) {
-                  window.location.href = command;
-                } else {
-                  showError();
-                }
-              } else if (command.startsWith("audio/")) {
-                const audioName = command.slice(6); // Get the audio name after 'audio/'
-                if (audioName.length > 0) {
-                  window.location.href = command;
-                } else {
-                  showError();
-                }
+            case "changelog":
+              terminalText.innerHTML += "<br>&gt; " + terminalInput.value;
+              terminalText.innerHTML += "<br>Changelog v2.1.1<br>- Added GitHub repository link to the navbar.<br>-Added `echo` command.<br>- Added welcome splash message.<br>- Added functionality to `help` command.<br>To add:<br>- About and Project pages.<br>";
+              break;
+          case "":
+            break;
+          default: 
+            if (command.startsWith("images/")) {
+              const imageName = command.slice(7); // Get the image name after 'images/'
+              if (imageName.length > 0) {
+                window.location.href = command;
               } else {
                 showError();
               }
-              break;
-          }
+            } else if (command.startsWith("audio/")) {
+              const audioName = command.slice(6); // Get the audio name after 'audio/'
+              if (audioName.length > 0) {
+                window.location.href = command;
+              } else {
+                showError();
+              }
+            } else if (command.startsWith("echo ")) {
+              const message = command.slice(5); // Get the message after 'echo '
+              terminalText.innerHTML += "<br>&gt; " + terminalInput.value;
+              terminalText.innerHTML += "<br>" + message;
+            } else {
+              showError();
+            }
+            break;
         }
-      });
+  
+        terminalInput.value = "";
+        terminalInput.blur();
+        document.getElementById("input-prefix").style.display = "none";
+        setTimeout(() => {
+          showInputCursor();
+        }, 1000);
+      }
     });
-      
-  
-  
+  });
