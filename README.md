@@ -8,12 +8,12 @@ This is the repository for my personal website. This is hosted on [ralsei.gay](h
 
 ### 2.2.1
 
-- Reorganised Directories 
+- Reorganised Directories. 
 
 ### 2.2
 
-- Added Projects page
-- Added About page
+- Added Projects page.
+- Added About page.
 
 ### 2.1.1
 
