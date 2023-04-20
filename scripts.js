@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
             break;
             case "changelog":
               terminalText.innerHTML += "<br>&gt; " + terminalInput.value;
-              terminalText.innerHTML += "<br>Changelog v2.2<br>- Added Projects page<br>- Added About page";
+              terminalText.innerHTML += "<br>Changelog v2.2.1<br>- Reorganised Directories.<br><br>Check the GitHub repo for older changes.";
               break;
           default: 
             if (command.startsWith("images/")) {
