@@ -6,6 +6,10 @@ This is the repository for my personal website. This is hosted on [ralsei.gay](h
 
 ## Changelog
 
+### 2.2.1
+
+- Reorganised Directories 
+
 ### 2.2
 
 - Added Projects page
