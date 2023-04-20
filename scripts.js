@@ -50,13 +50,13 @@ document.addEventListener("DOMContentLoaded", () => {
   
         switch (command) {
           case "tailwag":
-            window.location.href = "tailwag.html";
+            window.location.href = "/tailwag";
             break;
             case "projects":
-              window.location.href = "projects.html";
+              window.location.href = "/projects";
               break;
               case "about":
-                window.location.href = "about.html";
+                window.location.href = "/about";
                 break;
           case "help":
             terminalText.innerHTML += "<br>&gt; " + terminalInput.value;
