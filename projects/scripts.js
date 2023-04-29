@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   
     // Add a click event listener for the project images
+    projectImage.style.cursor = "pointer";
     projectImage.addEventListener("click", () => {
       const imageSrc = projectImage.getAttribute("src");
       const captionText = projectImage.getAttribute("alt");
