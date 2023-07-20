@@ -6,6 +6,10 @@ This is the repository for my personal website. This is hosted on [ralsei.gay](h
 
 ## Changelog
 
+### Alpha 3.0
+
+- Rehaul. Gone back to a Under Construction page until further notice of V3's completion.
+
 ### 2.2.1
 
 - Reorganised Directories. 
