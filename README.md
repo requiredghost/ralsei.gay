@@ -1,4 +1,4 @@
-# ralzei.github.io / ralsei.gay
+# ralsei.gay
 
 ## Summary
 
