@@ -89,14 +89,16 @@ h1.introduction-text {
     transition: opacity 0.5s ease-out, transform 0.5s ease-out;
   }
 
-  h1.introduction-text {
-    transform: translateY(0%);
-    transition: transform 0.5s ease-in-out, letter-spacing 1s ease-in-out;
+  img.introduction-artwork {
+    max-width: 75%;
+    height: auto;
+    transform: translateX(-10%) translateY(2%);
+    transition: max-width 0.5s ease-in-out, transform 0.5s ease-in-out;
   }
 
-  img.introduction-artwork {
-    width: 25em;
-    height: auto;
+  h1.introduction-text {
+    transform: translateY(0%);
+    transition: transform 0.25s ease-in-out 0.3s, letter-spacing 0.3s ease-in-out 0.3s;
   }
 }
 
@@ -104,7 +106,35 @@ h1.introduction-text {
   .introduction-artwork-container {
     opacity: 1;
     transform: translateY(0%) scale(1);
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out 0.3s, transform 0.5s ease-in-out 0.3s;
+  }
+
+  img.introduction-artwork {
+    max-width: 100%;
+    height: auto;
+    transform: translateX(-10%) translateY(2%);
+    transition: max-width 0.5s ease-in-out 0.3s, transform 0.5s ease-in-out 0.3s;
+  }
+
+  h1.introduction-text {
+    transform: translateY(-250%);
+    transition: transform 0.25s ease-in-out, letter-spacing 0.3s ease-in-out;
+  }
+}
+
+@media (max-width: 300px) {
+  .logo {
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out, width 0.3s ease-out;
+  }
+}
+
+@media (min-width: 301px) {
+  .logo {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 0.3s ease-in, transform 0.3s ease-in, width 0.3s ease-in;
   }
 }
 
