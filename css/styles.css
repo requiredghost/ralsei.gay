@@ -31,7 +31,7 @@ body {
 }
 
 h1.introduction-text {
-  transform: translateY(-125%);
+  transform: translateY(-250%);
   font-size: 3em;
   margin-bottom: 25px;
   margin-top: 25px;
@@ -42,10 +42,9 @@ h1.introduction-text {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  letter-spacing: 0.3em;
   word-spacing: 0em;
   font-weight: 1000;
-  transition: transform 0.5s ease-out;
+  transition: transform 0.5s ease-out, letter-spacing 1s ease-in-out;
 }
 
 .header {
@@ -92,7 +91,7 @@ h1.introduction-text {
 
   h1.introduction-text {
     transform: translateY(0%);
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, letter-spacing 1s ease-in-out;
   }
 
   img.introduction-artwork {
@@ -142,4 +141,36 @@ img.introduction-artwork {
   bottom: -12px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+@keyframes animation {
+  from {
+    letter-spacing: 0.1em;
+  }
+  to {
+    letter-spacing: 0.25em;
+  }
+}
+
+h1.introduction-text.animation {
+  animation: animation 5s ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }

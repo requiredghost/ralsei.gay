@@ -22,7 +22,7 @@ function scrollToCurrentPage() {
     const scrollTo = currentPage * window.innerHeight;
     const start = window.scrollY;
     const end = scrollTo;
-    const duration = 800;
+    const duration = 650;
 
     let startTime;
 
