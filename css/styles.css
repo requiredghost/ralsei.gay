@@ -59,6 +59,32 @@ h1.introduction-text {
   text-align: center;
 }
 
+.page-indicator {
+  position: fixed;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 5;
+  opacity: 1;
+}
+
+.page-indicator .circle {
+  width: 12px;
+  height: 12px;
+  background-color: transparent;
+  border: 2px solid #9a662b;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.page-indicator .filled {
+  background-color: #9a662b;
+}
+
 .logo {
   width: 200px;
   height: auto;
@@ -80,6 +106,20 @@ h1.introduction-text {
 
 .page:nth-child(even) .content img {
   transform: translateY(20%);
+}
+
+@media (max-width: 650px) {
+  .page-indicator {
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+  }
+}
+
+@media (min-width: 651px) {
+  .page-indicator {
+    opacity: 1;
+    transition: opacity 0.3s ease-in;
+  }
 }
 
 @media (max-width: 768px) {
