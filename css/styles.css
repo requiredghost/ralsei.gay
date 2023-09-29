@@ -201,15 +201,14 @@ img.introduction-artwork {
 
 .introduction-artwork:hover {
   cursor: pointer;
-  transform: translateX(-10%) translateY(2%) scale(1.1);
+  transform: translateX(-10%) translateY(2%) scale(1.05);
   transition: transform 0.2s ease-out;
 }
 
-/* .introduction-artwork:active {
-  transform: translateX(-10%) translateY(6.5%) scale(0.9); 
-  transition: transform 0.2s ease-out;
+.introduction-artwork:active {
+  transform: translateX(-10%) translateY(2%) scale(1); 
+  transition: transform 0.1s ease-out;
 }
-*/
 
 .introduction-artwork-container::after {
   z-index: -1;
