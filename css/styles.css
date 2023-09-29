@@ -111,14 +111,14 @@ h1.introduction-text {
 @media (max-width: 650px) {
   .page-indicator {
     opacity: 0;
-    transition: opacity 0.3s ease-out;
+    transition: opacity 0.2s ease-out;
   }
 }
 
 @media (min-width: 651px) {
   .page-indicator {
     opacity: 1;
-    transition: opacity 0.3s ease-in;
+    transition: opacity 0.2s ease-in;
   }
 }
 
@@ -138,7 +138,7 @@ h1.introduction-text {
 
   h1.introduction-text {
     transform: translateY(0%);
-    transition: transform 0.25s ease-in-out 0.3s, letter-spacing 0.3s ease-in-out 0.3s;
+    transition: transform 0.25s ease-in-out 0.2s, letter-spacing 0.2s ease-in-out 0.2s;
   }
 }
 
@@ -146,19 +146,19 @@ h1.introduction-text {
   .introduction-artwork-container {
     opacity: 1;
     transform: translateY(0%) scale(1);
-    transition: opacity 0.5s ease-in-out 0.3s, transform 0.5s ease-in-out 0.3s;
+    transition: opacity 0.5s ease-in-out 0.2s, transform 0.5s ease-in-out 0.2s;
   }
 
   img.introduction-artwork {
     max-width: 100%;
     height: auto;
     transform: translateX(-10%) translateY(2%);
-    transition: max-width 0.5s ease-in-out 0.3s, transform 0.5s ease-in-out 0.3s;
+    transition: max-width 0.5s ease-in-out 0.2s, transform 0.5s ease-in-out 0.2s;
   }
 
   h1.introduction-text {
     transform: translateY(-250%);
-    transition: transform 0.25s ease-in-out, letter-spacing 0.3s ease-in-out;
+    transition: transform 0.25s ease-in-out, letter-spacing 0.2s ease-in-out;
   }
 }
 
@@ -166,7 +166,7 @@ h1.introduction-text {
   .logo {
     opacity: 0;
     transform: scale(0.5);
-    transition: opacity 0.3s ease-out, transform 0.3s ease-out, width 0.3s ease-out;
+    transition: opacity 0.2s ease-out, transform 0.2s ease-out, width 0.2s ease-out;
   }
 }
 
@@ -174,7 +174,7 @@ h1.introduction-text {
   .logo {
     opacity: 1;
     transform: scale(1);
-    transition: opacity 0.3s ease-in, transform 0.3s ease-in, width 0.3s ease-in;
+    transition: opacity 0.2s ease-in, transform 0.2s ease-in, width 0.2s ease-in;
   }
 }
 
@@ -198,6 +198,18 @@ img.introduction-artwork {
   transform: translateX(-50%);
   text-align: center;
 }
+
+.introduction-artwork:hover {
+  cursor: pointer;
+  transform: translateX(-10%) translateY(2%) scale(1.1);
+  transition: transform 0.2s ease-out;
+}
+
+/* .introduction-artwork:active {
+  transform: translateX(-10%) translateY(6.5%) scale(0.9); 
+  transition: transform 0.2s ease-out;
+}
+*/
 
 .introduction-artwork-container::after {
   z-index: -1;
