@@ -84,6 +84,7 @@ img.under-construction-artwork:active {
 }
 
 .goat-emojis {
+  z-index: -1;
   position: fixed;
   align-self: center;
   top: 0;
