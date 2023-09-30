@@ -1,8 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
     const logoContainer = document.querySelector('.under-construction-artwork-container');
+    const goatEmojisContainer = document.querySelector('.goat-emojis');
     const logo = document.getElementById('under-construction-artwork');
 
     var artworkImage = document.getElementById("under-construction-artwork");
+
+    logoContainer.style.opacity = 1;
 
     var randomChance = Math.random();
     if (randomChance < 0.5) {
@@ -11,9 +14,26 @@ document.addEventListener('DOMContentLoaded', function() {
       artworkImage.src = "images/misc/coffee/coffee1.png";
     }
 
-    logoContainer.style.opacity = 1;
-
-    logo.addEventListener('click', playRandomSound);
+    logoContainer.addEventListener('click', function(event) {
+        const x = event.clientX;
+        const y = event.clientY;
+    
+        const goatEmoji = document.createElement('div');
+        goatEmoji.className = 'goat-emoji';
+        goatEmoji.innerHTML = '🐐';
+    
+        const xOffset = Math.random() * window.innerWidth;
+        goatEmoji.style.left = xOffset + 'px';
+        goatEmoji.style.top = y + 'px';
+    
+        goatEmojisContainer.appendChild(goatEmoji);
+    
+        goatEmoji.addEventListener('animationend', function() {
+            goatEmoji.remove();
+        });
+    
+        playRandomSound();
+    });
 
     const underConstruction = document.querySelector('.under-construction');
     underConstruction.style.opacity = 0;

@@ -82,3 +82,31 @@ img.under-construction-artwork:active {
   position: relative;
   bottom: 0;
 }
+
+.goat-emojis {
+  position: fixed;
+  align-self: center;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+@keyframes risingGoats {
+  0% {
+      opacity: 0.5;
+      font-size: 50px;
+      transform: translateY(0);
+  }
+  100% {
+      opacity: 0;
+      font-size: 50px;
+      transform: translateY(-100vh);
+  }
+}
+
+.goat-emoji {
+  bottom: 0;
+  position: absolute;
+  opacity: 1;
+  animation: risingGoats 1s linear;
+}
