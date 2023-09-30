@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+    background-color: #f7d762;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,6 +12,11 @@ body {
     opacity: 0;
     transform: scale(0.7);
     transition: opacity 1s, transform 1s;
+  }
+
+  .under-construction
+  {
+    color: #d99209;
   }
   
   .logo {
