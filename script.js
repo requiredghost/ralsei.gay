@@ -2,6 +2,14 @@ document.addEventListener('DOMContentLoaded', function() {
   const logoContainer = document.querySelector('.under-construction-artwork-container');
   const logo = document.getElementById('under-construction-artwork');
 
+  var artworkImage = document.getElementById("under-construction-artwork");
+
+  var randomChance = Math.random();
+  if (randomChance < 0.5) {
+    artworkImage.src = "images/coffee2.png";
+  }
+
+
   logoContainer.style.opacity = 1;
 
   logo.addEventListener('click', playRandomSound);
