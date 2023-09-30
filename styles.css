@@ -19,7 +19,6 @@ body {
 .logo {
   width: 100%;
   height: auto;
-  cursor: pointer;
   transition: transform 0.3s;
 }
 
@@ -54,6 +53,8 @@ img.under-construction-artwork:active {
   font-size: 24px;
   margin: 20px 0;
   transition: opacity 1s;
+  letter-spacing: 10px;
+  word-spacing: 10px
 }
 
 .social-icons {
