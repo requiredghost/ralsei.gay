@@ -2,6 +2,15 @@ document.addEventListener('DOMContentLoaded', function() {
     const logoContainer = document.querySelector('.under-construction-artwork-container');
     const logo = document.getElementById('under-construction-artwork');
 
+    var artworkImage = document.getElementById("under-construction-artwork");
+
+    var randomChance = Math.random();
+    if (randomChance < 0.5) {
+      artworkImage.src = "images/misc/coffee/coffee2.png";
+    } else {
+      artworkImage.src = "images/misc/coffee/coffee1.png";
+    }
+
     logoContainer.style.opacity = 1;
 
     logo.addEventListener('click', playRandomSound);
@@ -37,16 +46,16 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     const sounds = [
-        'sound1.mp3',
-        'sound2.mp3',
-        'sound3.mp3',
-        'sound4.mp3',
-        'sound5.mp3',
-        'sound6.mp3',
-        'sound7.mp3',
+        'goat1.mp3',
+        'goat2.mp3',
+        'goat3.mp3',
+        'goat4.mp3',
+        'goat5.mp3',
+        'goat6.mp3',
+        'goat7.mp3',
     ];
     const audioElements = sounds.map(sound => {
-        const audio = new Audio('sounds/misc/' + sound);
+        const audio = new Audio('sounds/misc/goat/' + sound);
         audio.preload = 'auto';
         return audio;
     });
