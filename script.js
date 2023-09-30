@@ -48,14 +48,23 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-function playRandomSound() {
-  const sounds = [
-      'sound1.mp3',
-      'sound2.mp3',
-      'sound3.mp3'
-  ];
+    const sounds = [
+        'sound1.mp3',
+        'sound2.mp3',
+        'sound3.mp3',
+        'sound4.mp3',
+        'sound5.mp3',
+        'sound6.mp3',
+        'sound7.mp3',
+    ];
+    const audioElements = sounds.map(sound => {
+        const audio = new Audio('sounds/misc/' + sound);
+        audio.preload = 'auto';
+        return audio;
+    });
 
-  const randomIndex = Math.floor(Math.random() * sounds.length);
-  const audio = new Audio('sounds/' + sounds[randomIndex]);
-  audio.play();
-}
+    function playRandomSound() {
+        const randomIndex = Math.floor(Math.random() * audioElements.length);
+        audioElements[randomIndex].play();
+    }
+
