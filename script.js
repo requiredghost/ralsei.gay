@@ -1,12 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const logoContainer = document.querySelector('.logo-container');
-  const logo = document.getElementById('logo');
+  const logoContainer = document.querySelector('.under-construction-artwork-container');
+  const logo = document.getElementById('under-construction-artwork');
 
   logoContainer.style.opacity = 1;
 
   logo.addEventListener('click', playRandomSound);
-  logo.addEventListener('mouseover', () => logo.style.transform = 'scale(1.1)');
-  logo.addEventListener('mouseout', () => logo.style.transform = 'scale(1)');
 
   // Function to fade in the "Under Construction" text
   const underConstruction = document.querySelector('.under-construction');
@@ -52,10 +50,4 @@ function playRandomSound() {
   const randomIndex = Math.floor(Math.random() * sounds.length);
   const audio = new Audio('sounds/' + sounds[randomIndex]);
   audio.play();
-
-  // Add animation for the click event (move slightly)
-  this.style.transform = 'translateY(-5px)';
-  setTimeout(() => {
-      this.style.transform = 'translateY(0)';
-  }, 100);
 }
